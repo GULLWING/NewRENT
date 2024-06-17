@@ -1,0 +1,55 @@
+﻿<Page x:Class="WpfRent.View.Pages.ProfilPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:WpfRent.View.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="340"
+      Title="ProfilPage">
+
+    <Grid HorizontalAlignment="Center" VerticalAlignment="Center">
+        <Image Name="Image" Source="/Resources/fon.jpg" Margin="0,0,0,20" />
+        <Border BorderBrush="LightGray" BorderThickness="4" Margin="250,10,250 22" CornerRadius="20" Padding="40"/>
+        
+
+
+
+        <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center">
+            <Image Height="100" Margin="0,10,0,10" HorizontalAlignment="Center" Source="/Resources/unsplash_jmURdhtm7Ngprofil.png"/>
+
+            <StackPanel Orientation="Horizontal" Margin="0,10">
+                <TextBlock Width="100" FontSize="23" Text="Фамилия:" Margin="10"/>
+                <TextBox Name="LastnameTb" Margin="10" Height="35" Width="200" FontSize="16"/>
+            </StackPanel>
+
+            <StackPanel  Orientation="Horizontal" Margin="0,10">
+                <TextBlock Width="100" Text="Имя:" FontSize="23" Margin="10"/>
+                <TextBox Name="FirstNameTB" Margin="10"  Height="35" Width="200" FontSize="16"/>
+            </StackPanel>
+
+            <StackPanel Orientation="Horizontal" Margin="0,10">
+                <TextBlock Width="100" Text="Отчество:" FontSize="22" Margin="10"/>
+                <TextBox Name="PatronymicTb" Margin="10" Height="35" Width="200" FontSize="16"/>
+            </StackPanel>
+
+            <StackPanel Orientation="Horizontal" Margin="0,10">
+                <TextBlock Width="100" Text="Почта:" FontSize="23" Margin="10"/>
+                <TextBox x:Name="EmailTb" Margin="10" Height="35" Width="200" FontSize="16"/>
+            </StackPanel>
+
+            <StackPanel Orientation="Horizontal" Margin="0,10">
+                <TextBlock Width="100" Text="Пароль:" FontSize="23" Margin="10"/>
+                <PasswordBox Name="PasswordPb" Margin="10" Height="35" Width="200" FontSize="16"/>
+            </StackPanel>
+
+            <StackPanel Orientation="Horizontal" Margin="0,10">
+                <TextBlock Width="100" Text="Локация:" FontSize="23" Margin="10"/>
+                <ComboBox x:Name="LocationTb" Margin="10" Height="35" Width="200" FontSize="16"/>
+            </StackPanel>
+
+            <Button Click="Button_Click" Content="Сохранить изменения" Margin="10 10 10 10" Height="40" FontWeight="Heavy" Width="300" FontSize="16"/>
+            <Button Click="BackBtn_Click" Name="BackBtn" Content="Назад" Margin="0,20" FontWeight="Heavy" Height="40" Width="300" FontSize="12"/>
+        </StackPanel>
+    </Grid>
+</Page>
